@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-white-one font-Raleway scroll-smooth;
+    @apply bg-white-one font-Raleway scroll-smooth dark:bg-dark-black;
   }
 
   h1,
@@ -24,6 +24,6 @@
 
 @layer components {
   .btn {
-    @apply flex justify-center items-center font-semibold border-2 rounded-full text-green-dark px-6 py-3 transition-all duration-300 ease-in hover:bg-green-dark hover:text-white-one;
+    @apply flex justify-center items-center font-semibold border-2 rounded-full text-main-dark px-6 py-3 transition-all duration-300 ease-in-out hover:bg-main-dark hover:text-white-one hover:border-main-dark;
   }
 }

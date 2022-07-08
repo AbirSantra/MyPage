@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     colors: {
       transparent: "transparent",
@@ -15,8 +16,8 @@ module.exports = {
       "dark-grey": "#4a5768",
       "light-black": "#2c2e33",
       "dark-black": "#25262a",
-      green: "#62f5ab",
-      "green-dark": "#49bb78",
+      main: "#62f5ab",
+      "main-dark": "#49bb78",
     },
     fontFamily: {
       Titillium: ["Titillium Web", "sans-serif"],
