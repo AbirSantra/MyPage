@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar fixed w-full h-20 sm:h-24 z-[100] flex justify-center items-center dark:bg-dark-black">
+    <div className="navbar w-full h-20 sm:h-24 z-[100] flex justify-center items-center bg-white-one/70 dark:bg-dark-black/70 backdrop-blur-sm">
       <div className="navbar__container flex justify-between items-center w-full h-full max-w-[1440px] px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href="/">
@@ -97,15 +97,15 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "navbar__mobile--background fixed top-0 left-0 w-full h-screen bg-dark-black/60"
+            ? "md:hidden navbar__mobile--background fixed top-0 left-0 z-[100] w-full h-screen bg-dark-black/70"
             : ""
         }
       >
         <div
           className={
             nav
-              ? "navbar__mobile--menu fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white-two dark:bg-light-black p-10 ease-in duration-300 flex flex-col justify-between gap-16"
-              : "navbar__mobile--menu fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-full bg-white-two dark:bg-light-black p-10 ease-in duration-300 flex flex-col justify-between gap-16"
+              ? "navbar__mobile--menu fixed left-0 top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.4s] flex flex-col justify-start gap-16"
+              : "navbar__mobile--menu fixed left-[-100%] top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.4s] flex flex-col justify-start gap-16"
           }
         >
           {/* Top Section */}
@@ -131,7 +131,7 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="/about" onClick={handleNav}>
+            <Link href="/about">
               <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
                 About
               </a>

@@ -23,7 +23,18 @@ module.exports = {
       Titillium: ["Titillium Web", "sans-serif"],
       Raleway: ["Raleway", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        floating: {
+          "0%": { transform: "translatey(0px)" },
+          "50%": { transform: "translatey(10px)" },
+          "100%": { transform: "translatey(0px)" },
+        },
+      },
+      animation: {
+        "floating-div": "floating 2.5s linear infinite",
+      },
+    },
   },
   plugins: [],
 };
