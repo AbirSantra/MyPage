@@ -4,25 +4,33 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
 const Navbar = () => {
+  //for storing the state of the theme(light/dark)
   const [darkmode, setDarkmode] = useState("light");
+
+  //for storing the state of the navbar(open/close)
   const [nav, setNav] = useState(false);
 
+  //for changing the navbar state
   const handleNav = () => {
+    //toggles the navbar state from true->false->true->false
     setNav((prev) => !prev);
   };
 
+  //for setting the theme
   const handleTheme = () => {
     if (darkmode == "light") {
+      //if theme is light, add 'dark' class to the root and change state of theme
       document.documentElement.classList.add("dark");
       setDarkmode("dark");
     } else {
+      //if theme is dark, remove 'dark' class from the root and change state of theme
       document.documentElement.classList.remove("dark");
       setDarkmode("light");
     }
   };
 
   return (
-    <div className="navbar w-full h-20 sm:h-24 z-[100] flex justify-center items-center bg-white-one/70 dark:bg-dark-black/70 backdrop-blur-sm">
+    <div className="navbar relative w-full h-20 sm:h-24 z-[100] flex justify-center items-center bg-white-one/70 dark:bg-dark-black/70 backdrop-blur-sm">
       <div className="navbar__container flex justify-between items-center w-full h-full max-w-[1440px] px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href="/">
@@ -66,6 +74,7 @@ const Navbar = () => {
           </div>
 
           {/* Theme toggler */}
+          {/* Changes the theme icon depending on the theme state. Show moon icon if theme is currently 'dark' else show sun icon if theme is 'light' */}
           <button onClick={handleTheme}>
             {darkmode === "light" ? (
               <MdOutlineDarkMode
@@ -94,6 +103,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
+      {/* Show the mobile menu only if state of navbar is true else dont show */}
       <div
         className={
           nav
@@ -102,10 +112,11 @@ const Navbar = () => {
         }
       >
         <div
+          // mobile menu is outside the screen initially. if state of menu is true, change position to come on screen.
           className={
             nav
-              ? "navbar__mobile--menu fixed left-0 top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.4s] flex flex-col justify-start gap-16"
-              : "navbar__mobile--menu fixed left-[-100%] top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.4s] flex flex-col justify-start gap-16"
+              ? "navbar__mobile--menu fixed left-0 top-0 opacity-90 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.5s] flex flex-col justify-start gap-16"
+              : "navbar__mobile--menu fixed left-[-100%] opacity-0 top-0 w-[80%] sm:w-[60%] md:w-[45%] h-screen bg-white-two dark:bg-light-black p-10 ease-in duration-[0.5s] flex flex-col justify-start gap-16"
           }
         >
           {/* Top Section */}
