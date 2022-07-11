@@ -3,10 +3,11 @@ import Image from "next/image";
 import Avatar from "../public/abir dp.png";
 import Socials from "./Socials";
 import { BiChevronsDown } from "react-icons/bi";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-[calc(100vh-10rem)] md:h-[calc(100vh-6rem)] w-full flex justify-center items-center">
+    <div className="relative h-[calc(100vh-8rem)] md:h-[calc(100vh-6rem)] w-full flex justify-center items-center bg-white-two dark:bg-dark-black">
       <div className="w-full max-w-[1440px] h-full p-4 md:p-8 lg:p-16 flex flex-col justify-center items-center gap-4 text-center text-dark-black dark:text-white-two">
         <p className="text-main-dark font-semibold text-xl uppercase">
           Hi, I&apos;m Abir
@@ -18,7 +19,7 @@ const Hero = () => {
           I love building things out of code.
         </p>
         <div
-          className="bg-main-dark rounded-full w-[170px] h-[170px] flex justify-center items-center animate-floating-div transition-all ease-in duration-200 mt-8"
+          className="bg-main-dark rounded-full w-[170px] h-[170px] flex justify-center items-center animate-floating-div transition-all ease-in duration-200 mt-12"
           title="Yeah, that's my face😐"
         >
           <Image
@@ -30,10 +31,12 @@ const Hero = () => {
           />
         </div>
         <Socials />
-        <BiChevronsDown
-          size={24}
-          className="absolute bottom-2 sm:bottom-8 cursor-pointer text-light-grey animate-floating-div"
-        />
+        <a href="#about">
+          <BiChevronsDown
+            size={24}
+            className="absolute bottom-8 sm:bottom-8 cursor-pointer text-light-grey animate-floating-div"
+          />
+        </a>
       </div>
     </div>
   );

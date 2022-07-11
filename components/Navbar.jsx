@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar relative w-full h-20 sm:h-24 z-[100] flex justify-center items-center bg-white-one/70 dark:bg-dark-black/70 backdrop-blur-sm">
+    <div className="navbar sticky top-0 w-full h-20 sm:h-24 z-[100] flex justify-center items-center bg-white-two/70 dark:bg-dark-black/70 backdrop-blur-sm">
       <div className="navbar__container flex justify-between items-center w-full h-full max-w-[1440px] px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href="/">
