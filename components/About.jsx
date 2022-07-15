@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import { FaCode } from "react-icons/fa";
-import { FiPenTool, FiDownload } from "react-icons/fi";
+import { FaCode, FaDownload, FaExternalLinkAlt } from "react-icons/fa";
+import { FiPenTool, FiDownload, FiExternalLink } from "react-icons/fi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoOpenOutline } from "react-icons/io5";
 
@@ -50,7 +50,7 @@ const About = () => {
             with my friends and play video games, listen to music, jam on my
             drums, and watch Anime.
           </p>
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-4">
             <p className=" text-dark-black dark:text-white-two text-lg font-medium font-Titillium">
               Resume:{" "}
             </p>
@@ -65,7 +65,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <IoOpenOutline
+              <FiExternalLink
                 size={24}
                 className="text-dark-black dark:text-white-two hover:text-main-dark duration-300 ease-in-out dark:hover:text-main-dark"
               />
