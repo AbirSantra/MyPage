@@ -3,7 +3,7 @@ import React from "react";
 const ServiceCard = ({ name, icon, desc }) => {
   // Container Div
   return (
-    <div className="group w-full h-fit flex justify-center items-start bg-grey dark:bg-light-black rounded-lg p-6 gap-8 border-[1px] border-grey dark:border-light-black hover:border-[1px] hover:border-main-dark dark:hover:border-main-dark ease-in-out duration-300 cursor-pointer hover:scale-105">
+    <div className="group w-full h-fit flex justify-center items-start bg-grey dark:bg-light-black rounded-lg p-6 gap-8 border-[1px] border-grey dark:border-light-black hover:border-[1px] hover:border-main-dark dark:hover:border-main-dark ease-in-out duration-300 cursor-pointer hover:scale-105 shadow-md">
       {/* Text */}
       <div className="w-full flex justify-center items-start flex-col gap-2">
         <h1 className="text-[1rem] sm:text-[1.2rem] font-semibold tracking-wide font-Titillium text-dark-black dark:text-white-two group-hover:text-main-dark ease-in-out duration-300">
@@ -14,7 +14,9 @@ const ServiceCard = ({ name, icon, desc }) => {
         </p>
       </div>
       {/* Icon */}
-      <div className="text-[2rem] text-main-dark">{icon}</div>
+      <div className="text-[2rem] text-main-dark group-hover:text-main ease duration-300">
+        {icon}
+      </div>
     </div>
   );
 };
