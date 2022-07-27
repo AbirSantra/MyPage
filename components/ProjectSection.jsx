@@ -1,5 +1,9 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import PolaroidImg from "../img/Polaroid.jpg";
+import CoinCoinImg from "../img/CoinCoin.jpg";
+import WeatherNow from "../img/WeatherNow.jpg";
+import Image from "next/image";
 
 const ProjectSection = () => {
   return (
@@ -17,15 +21,15 @@ const ProjectSection = () => {
         </div>
 
         {/* Projects Div */}
-        <div className="project-container w-full grid md:grid-rows-2 md:grid-cols-3 md:grid-flow-col gap-4">
-          <div className="project-1 md:row-span-2 md:col-span-2 border-2 border-main">
-            Project 1
+        <div className="project-container w-full grid justify-center items-center md:grid-rows-2 md:grid-cols-3 md:grid-flow-col gap-4">
+          <div className="project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+            <Image src={PolaroidImg} />
           </div>
-          <div className="project-2 md:col-span-1 border-2 border-main">
-            Project 2
+          <div className="project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+            <Image src={CoinCoinImg} />
           </div>
-          <div className="project-3 md:col-span-1 border-2 border-main">
-            Project 3
+          <div className="project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+            <Image src={WeatherNow} />
           </div>
         </div>
 
