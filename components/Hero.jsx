@@ -31,11 +31,11 @@ const Hero = () => {
           />
         </div>
         <Socials />
-        <a href="#about">
-          <BiChevronsDown
-            size={24}
-            className="absolute bottom-8 sm:bottom-8 cursor-pointer text-light-grey animate-floating-div"
-          />
+        <a
+          href="#about"
+          className="absolute bottom-8 sm:bottom-8 cursor-pointer text-light-grey animate-floating-div"
+        >
+          <BiChevronsDown size={24} />
         </a>
       </div>
     </div>
