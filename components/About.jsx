@@ -4,6 +4,7 @@ import { FaCode, FaDownload, FaExternalLinkAlt } from "react-icons/fa";
 import { FiPenTool, FiDownload, FiExternalLink } from "react-icons/fi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoOpenOutline } from "react-icons/io5";
+import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   // Outer Div
@@ -37,9 +38,12 @@ const About = () => {
           <h1 className="font-Titillium text-dark-black dark:text-white-two">
             About Me
           </h1>
-          <h2 className="font-Titillium font-medium text-2xl italic text-light-black dark:text-white-two">
+          {/* <h2 className="font-Titillium font-medium text-2xl italic text-light-black dark:text-white-two">
             I enjoy creating things that make a difference.
-          </h2>
+          </h2> */}
+          <p className="text-light-grey text-sm font-medium sm:text-base">
+            I enjoy creating things that make a difference
+          </p>
           <p className="text-light-grey text-sm font-medium sm:text-base">
             I started coding in high school and currently am a second-year
             undergraduate studying Information Technology at MCKV Institute of
@@ -50,29 +54,26 @@ const About = () => {
             to hang out with my friends and play video games, listen to music,
             jam on my drums, and watch Anime.
           </p>
-          <div className="flex items-center justify-center gap-4">
-            <p className=" text-dark-black dark:text-white-two text-lg font-medium font-Titillium">
+          <div className="flex items-center justify-center gap-4 text-sm sm:text-base">
+            {/* <p className=" text-dark-black dark:text-white-two text-lg font-medium font-Titillium">
               Resume:{" "}
-            </p>
+            </p> */}
             <a
               href="/Abir Santra CV(Unfinished).pdf"
               download
-              className="relative"
+              className="relative btn"
             >
-              <FiDownload
-                size={24}
-                className="text-dark-black dark:text-white-two hover:text-main-dark duration-300 ease-in-out dark:hover:text-main-dark"
-              />
+              Resume
+              <FiDownload />
             </a>
             <a
               href="/Abir Santra CV(Unfinished).pdf"
               target="_blank"
               rel="noreferrer"
+              className="btn-2"
             >
-              <FiExternalLink
-                size={24}
-                className="text-dark-black dark:text-white-two hover:text-main-dark duration-300 ease-in-out dark:hover:text-main-dark"
-              />
+              Learn More
+              <BsArrowRight />
             </a>
           </div>
         </div>
