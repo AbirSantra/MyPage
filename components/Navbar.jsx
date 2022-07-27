@@ -107,7 +107,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "md:hidden navbar__mobile--background fixed top-0 left-0 z-[100] w-full h-screen bg-dark-black/70"
+            ? "md:hidden navbar__mobile--background fixed top-0 left-0 z-[100] w-full h-screen bg-light-black/80"
             : ""
         }
       >
