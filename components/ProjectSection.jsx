@@ -22,13 +22,13 @@ const ProjectSection = () => {
 
         {/* Projects Div */}
         <div className="project-container w-full grid justify-center items-center md:grid-rows-2 md:grid-cols-3 md:grid-flow-col gap-4">
-          <div className="project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+          <div className="project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={PolaroidImg} />
           </div>
-          <div className="project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+          <div className="project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={CoinCoinImg} />
           </div>
-          <div className="project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit">
+          <div className="project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={WeatherNow} />
           </div>
         </div>
