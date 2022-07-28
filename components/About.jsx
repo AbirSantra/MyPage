@@ -10,7 +10,7 @@ const About = () => {
   // Outer Div
   return (
     <div
-      className="w-full min-h-screen flex justify-center items-center py-[7rem]"
+      className="w-full flex justify-center items-center py-[7rem]"
       id="about"
     >
       {/* Container Div */}

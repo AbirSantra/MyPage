@@ -29,11 +29,11 @@
 @layer components {
   .btn {
     /* apply btn styles here */
-    @apply w-fit px-[1.5rem] py-[1rem] bg-main-dark rounded-full text-white-one font-normal hover:bg-main-dark ease-in-out duration-300 cursor-pointer flex justify-center items-center gap-2;
+    @apply w-fit px-[1.5rem] py-[1rem] bg-main-dark rounded-full text-white-one font-medium hover:bg-main-dark ease-in-out duration-300 cursor-pointer flex justify-center items-center gap-2 hover:scale-105;
   }
   .btn-2 {
     /* apply btn styles here */
-    @apply w-fit px-[calc(1.5rem-2px)] py-[calc(1rem-2px)] bg-transparent rounded-full text-main-dark font-medium hover:bg-main-dark hover:text-white-one border-2 hover:border-[2px] hover:border-main-dark ease-in-out duration-300 cursor-pointer flex justify-center items-center gap-2;
+    @apply w-fit px-[calc(1.5rem-2px)] py-[calc(1rem-2px)] bg-transparent rounded-full text-main-dark font-medium hover:bg-main-dark hover:text-white-one border-2 hover:border-[2px] hover:border-main-dark ease-in-out duration-300 cursor-pointer flex justify-center items-center gap-2 hover:scale-105;
   }
 }
 

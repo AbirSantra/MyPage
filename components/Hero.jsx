@@ -30,7 +30,9 @@ const Hero = () => {
             // className="relative z-10"
           />
         </div>
-        <Socials />
+        <div className="mt-12">
+          <Socials />
+        </div>
         <a
           href="#about"
           className="absolute bottom-8 sm:bottom-8 cursor-pointer text-light-grey animate-floating-div"
