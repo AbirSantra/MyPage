@@ -4,12 +4,13 @@ import PolaroidImg from "../img/Polaroid.jpg";
 import CoinCoinImg from "../img/CoinCoin.jpg";
 import WeatherNow from "../img/WeatherNow.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectSection = () => {
   return (
     <div className="w-full min-h-screen flex justify-center items-center py-28">
       {/* Container Div */}
-      <div className="w-full max-w-[1440px] flex flex-col gap-16 justify-center items-start px-4 md:px-8 lg:px-16">
+      <div className="w-full max-w-[1440px] flex flex-col gap-10 justify-center items-start px-4 md:px-8 lg:px-16">
         {/* Title Div */}
         <div className="flex justify-center items-start flex-col gap-4">
           <h1 className="font-Titillium  text-dark-black dark:text-white-two">
@@ -22,14 +23,35 @@ const ProjectSection = () => {
 
         {/* Projects Div */}
         <div className="project-container w-full grid justify-center items-center md:grid-rows-2 md:grid-cols-3 md:grid-flow-col gap-4">
-          <div className="project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
+          <div className="relative project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={PolaroidImg} />
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+              <Link href="project/polaroid">
+                <button className="btn text-3xl shadow-md">
+                  <BsArrowRight />
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
+          <div className="relative project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={CoinCoinImg} />
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+              <Link href="project/project-1">
+                <button className="btn text-3xl shadow-md">
+                  <BsArrowRight />
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className="project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
+          <div className="relative project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={WeatherNow} />
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+              <Link href="project/weathernow">
+                <button className="btn text-3xl shadow-md">
+                  <BsArrowRight />
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
 
