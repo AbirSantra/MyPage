@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
+import { useEffect } from "react";
 
 const Navbar = () => {
   //for storing the state of the theme(light/dark)
-  const [darkmode, setDarkmode] = useState("light");
+  const [darkmode, setDarkmode] = useState("dark");
+
+  useEffect(() => {
+    setDarkmode(localStorage.getItem("color-theme"));
+  }, []);
 
   //for storing the state of the navbar(open/close)
   const [nav, setNav] = useState(false);
@@ -21,10 +26,12 @@ const Navbar = () => {
     if (darkmode == "light") {
       //if theme is light, add 'dark' class to the root and change state of theme
       document.documentElement.classList.add("dark");
+      localStorage.setItem("color-theme", "dark");
       setDarkmode("dark");
     } else {
       //if theme is dark, remove 'dark' class from the root and change state of theme
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "light");
       setDarkmode("light");
     }
   };
