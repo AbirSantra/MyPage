@@ -9,10 +9,17 @@ import { useEffect } from "react";
 
 export default function Home({ posts }) {
   useEffect(() => {
-    if (localStorage.getItem("color-theme") === "dark") {
-      document.documentElement.classList.add("dark");
+    // if theme exists in local storage
+    if (localStorage.getItem("color-theme")) {
+      if (localStorage.getItem("color-theme") === "light") {
+        document.documentElement.classList.remove("dark");
+      } else {
+        document.documentElement.classList.add("dark");
+      }
+
+      // if NOT set via local storage previously
     } else {
-      document.documentElement.classList.remove("dark");
+      localStorage.setItem("color-theme", "dark");
     }
   }, []);
 

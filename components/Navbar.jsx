@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   //for storing the state of the theme(light/dark)
-  const [darkmode, setDarkmode] = useState("dark");
+  const [darkmode, setDarkmode] = useState();
 
   useEffect(() => {
     setDarkmode(localStorage.getItem("color-theme"));
