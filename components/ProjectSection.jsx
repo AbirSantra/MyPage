@@ -25,9 +25,9 @@ const ProjectSection = () => {
         <div className="project-container w-full grid justify-center items-center md:grid-rows-2 md:grid-cols-3 md:grid-flow-col gap-4">
           <div className="relative project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={PolaroidImg} />
-            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/polaroid">
-                <button className="btn text-3xl shadow-md">
+                <button className="btn text-3xl h-20 w-20 shadow-md">
                   <BsArrowRight />
                 </button>
               </Link>
@@ -35,9 +35,9 @@ const ProjectSection = () => {
           </div>
           <div className="relative project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={CoinCoinImg} />
-            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/project-1">
-                <button className="btn text-3xl shadow-md">
+                <button className="btn text-3xl h-20 w-20 shadow-md">
                   <BsArrowRight />
                 </button>
               </Link>
@@ -45,9 +45,9 @@ const ProjectSection = () => {
           </div>
           <div className="relative project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image src={WeatherNow} />
-            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/30 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
+            <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/weathernow">
-                <button className="btn text-3xl shadow-md">
+                <button className="btn text-3xl h-20 w-20 shadow-md">
                   <BsArrowRight />
                 </button>
               </Link>

@@ -10,7 +10,7 @@ const About = () => {
   // Outer Div
   return (
     <div
-      className="w-full flex justify-center items-center py-[7rem]"
+      className="w-full min-h-[100vh] flex justify-center items-center py-[7rem]"
       id="about"
     >
       {/* Container Div */}
@@ -58,18 +58,14 @@ const About = () => {
             jam on my drums, and watch Anime.
           </p>
           <div className="flex items-center justify-center gap-4 text-sm sm:text-base">
-            <a
-              href="/Abir Santra CV(Unfinished).pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
+            <a href="/about" className="btn">
               Learn More
               <BsArrowRight />
             </a>
             <a
               href="/Abir Santra CV(Unfinished).pdf"
-              download
+              target="_blank"
+              rel="noreferrer"
               className="btn-2"
             >
               Resume

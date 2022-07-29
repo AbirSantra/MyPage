@@ -8,6 +8,7 @@ const Navbar = () => {
   //for storing the state of the theme(light/dark)
   const [darkmode, setDarkmode] = useState();
 
+  //setting the initial value of the state to the existing theme in the local storage
   useEffect(() => {
     setDarkmode(localStorage.getItem("color-theme"));
   }, []);
@@ -55,27 +56,27 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <a className="navbar__navlink hidden md:flex justify-center items-center transition-all duration-300 ease-in-out hover:text-main-dark">
                 About
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/tech">
               <a className="navbar__navlink hidden md:flex justify-center items-center transition-all duration-300 ease-in-out hover:text-main-dark ">
                 Tech
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/project">
               <a className="navbar__navlink hidden md:flex justify-center items-center transition-all duration-300 ease-in-out hover:text-main-dark ">
                 Projects
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/blog">
               <a className="navbar__navlink hidden md:flex justify-center items-center transition-all duration-300 ease-in-out hover:text-main-dark ">
                 Blog
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a className="navbar__navlink btn hidden md:flex">Say Hi!</a>
             </Link>
           </div>
@@ -127,13 +128,14 @@ const Navbar = () => {
           }
         >
           {/* Top Section */}
-          <div className="mobilemenu__top flex justify-between items-center w-full">
+          <div className="mobilemenu__top flex justify-between items-center w-full cursor-pointer">
             {/* Logo */}
             <Link href="/">
-              <h1 className="navbar__logo font-Titillium text-[1.4rem] font-semibold leading-none dark:text-white-one">
-                Abir<span className=" font-thin cursor-pointer ">Santra</span>
+              <a className="navbar__logo font-Titillium text-[1.4rem] font-semibold dark:text-white-one cursor-pointer">
+                <span className="cursor-pointer">Abir</span>
+                <span className=" font-thin cursor-pointer ">Santra</span>
                 <span className="text-main-dark font-bold">.</span>
-              </h1>
+              </a>
             </Link>
             <AiOutlineClose
               onClick={handleNav}
@@ -154,17 +156,17 @@ const Navbar = () => {
                 About
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/tech">
               <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
                 Tech
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/project">
               <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
                 Projects
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/blog">
               <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
                 Blog
               </a>
@@ -187,7 +189,7 @@ const Navbar = () => {
             )}
           </button>
           {/* CTA Button */}
-          <Link href="/">
+          <Link href="/contact">
             <a className="btn bg-main-dark text-white-two border-0 w-full max-w-xs font-medium text-xl">
               Say Hi!
             </a>

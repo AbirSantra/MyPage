@@ -19,7 +19,7 @@ const Hero = () => {
           I love building things out of code.
         </p>
         <div
-          className="bg-main-dark rounded-full w-[170px] h-[170px] flex justify-center items-center animate-floating-div transition-all ease-in duration-200 mt-12"
+          className="bg-main-dark rounded-full w-[170px] h-[170px] flex justify-center items-center animate-floating-div transition-all ease-in duration-200 mt-8"
           title="Yeah, that's my face😐"
         >
           <Image
@@ -30,7 +30,7 @@ const Hero = () => {
             // className="relative z-10"
           />
         </div>
-        <div className="mt-12">
+        <div className="mt-8">
           <Socials />
         </div>
         <a
