@@ -3,7 +3,7 @@ import React from "react";
 
 const BlogCard = ({ post }) => {
   return (
-    <div className="group w-full h-fit flex justify-center items-start bg-grey dark:bg-light-black rounded-lg p-6 sm:px-8 gap-8 border-[1px] border-grey dark:border-light-black hover:border-[1px] hover:border-main-dark dark:hover:border-main-dark ease-in-out duration-300 cursor-pointer hover:translate-x-4 shadow-md">
+    <div className="group w-full h-fit flex justify-center items-start bg-grey dark:bg-light-black rounded-lg p-6 sm:px-8 gap-8 border-[1px] border-grey dark:border-light-black hover:border-[1px] hover:border-main-dark dark:hover:border-main-dark ease-in-out duration-300 cursor-pointer hover:translate-x-2 shadow-md">
       {/* Text */}
       <div className="w-full flex justify-center items-start flex-col gap-4">
         <h1 className="text-[1rem] sm:text-[1.2rem] font-bold font-Titillium text-main-dark  ease-in-out duration-300 leading-6 tracking-normal">
