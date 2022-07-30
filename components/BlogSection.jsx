@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import BlogCard from "./BlogCard";
@@ -26,9 +27,11 @@ const BlogSection = ({ posts }) => {
         </div>
 
         {/* Button to all blogs */}
-        <button className="btn self-end">
-          See all Blogs <BsArrowRight />
-        </button>
+        <Link href="/blog">
+          <button className="btn self-end">
+            See all Blogs <BsArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );

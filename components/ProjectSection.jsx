@@ -70,9 +70,11 @@ const ProjectSection = () => {
         </div>
 
         {/* Button to all projects */}
-        <button className="btn self-end">
-          See all projects <BsArrowRight />
-        </button>
+        <Link href="/project">
+          <button className="btn self-end">
+            See all projects <BsArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );
