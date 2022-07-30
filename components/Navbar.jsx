@@ -76,7 +76,7 @@ const Navbar = () => {
                 Blog
               </a>
             </Link>
-            <Link href="/contact">
+            <Link href="mailto:santraabir8@gmail.com?subject=Write%20your%20main%20purpose%20of%20contacting%20me%20here&body=Write%20your%20message%20in%20detail.%0D%0ADon't%20forget%20to%20mention%20your%20contact%20detail%20so%20I%20can%20get%20back%20to%20you">
               <a className="navbar__navlink btn hidden md:flex">Say Hi!</a>
             </Link>
           </div>
@@ -189,7 +189,7 @@ const Navbar = () => {
             )}
           </button>
           {/* CTA Button */}
-          <Link href="/contact">
+          <Link href="mailto:santraabir8@gmail.com?subject=Write%20your%20main%20purpose%20of%20contacting%20me%20here&body=Write%20your%20message%20in%20detail.%0D%0ADon't%20forget%20to%20mention%20your%20contact%20detail%20so%20I%20can%20get%20back%20to%20you">
             <a className="btn bg-main-dark text-white-two border-0 w-full max-w-xs font-medium text-xl">
               Say Hi!
             </a>
