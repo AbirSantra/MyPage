@@ -32,8 +32,8 @@ const about = () => {
             Bio
           </h2>
           {/* Adamas */}
-          <div className="flex justify-start items-start flex-col gap-4 text-dark-black dark:text-white-one">
-            <p className="font-semibold text-lg">
+          <div className="flex justify-start items-start flex-col gap-4 text-dark-black dark:text-light-grey">
+            <p className="font-semibold text-lg text-dark-black dark:text-white-one">
               I'm a simple guy with a passion for development and design. I
               enjoy creating things that make a difference.
             </p>
