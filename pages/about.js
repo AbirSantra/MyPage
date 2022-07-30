@@ -21,9 +21,53 @@ const about = () => {
             About me
           </h1>
           <p className="text-main-dark text-xl font-medium text-center">
-            I enjoy creating things that make a difference
+            A bit more about me
           </p>
         </div>
+        <div className="line w-full max-w-[1440px] h-[1px] bg-light-grey/40"></div>
+
+        {/* Experience */}
+        <div className="w-full flex flex-col justify-center items-start gap-6">
+          <h2 className="font-Titillium text-[1.8rem] sm:text-[2rem] text-dark-black dark:text-white-one">
+            Bio
+          </h2>
+          {/* Adamas */}
+          <div className="flex justify-start items-start flex-col gap-4 text-dark-black dark:text-white-one">
+            <p className="font-semibold text-lg">
+              I'm a simple guy with a passion for development and design. I
+              enjoy creating things that make a difference.
+            </p>
+            <p className="font-normal">
+              I have always loved creating things out of scratch. It started
+              with graphics designing and now it has expanded to web development
+              as well. I love the feeling of creating something out of scratch
+              and have people use it.
+              <br /> I also love taking part in Hackathons and Open-Source
+              Programs. I have participated in a few internal-college hackathons
+              as well as the Smart India Hackthon 2022 with a team of seniors
+              and successfully cleared the internal screening. I have
+              participated in GirlScript Summer of Code and learned the basics
+              of open source contributions and plan on contributing to many
+              projects in the future.
+            </p>
+            <div className="font-normal">
+              Currently
+              <li className="">
+                Building Polaroid 2.0 - An online platform for creators
+              </li>
+              <li className="">
+                Learning and exploring the world of DevOps and Web 3.0
+              </li>
+              <li className="">Contributing to Open Source</li>
+              <li className="">Writing articles about everything I learn</li>
+              <li className="">
+                Looking for Developer Roles (preferably remote but open to all
+                options)
+              </li>
+            </div>
+          </div>
+        </div>
+
         <div className="line w-full max-w-[1440px] h-[1px] bg-light-grey/40"></div>
 
         {/* Education */}
