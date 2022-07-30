@@ -24,7 +24,7 @@ const about = () => {
             A bit more about me
           </p>
         </div>
-        <div className="line w-full max-w-[1440px] h-[1px] bg-light-grey/40"></div>
+        {/* <div className="line w-full max-w-[1440px] h-[1px] bg-light-grey/40"></div> */}
 
         {/* Experience */}
         <div className="w-full flex flex-col justify-center items-start gap-6">
