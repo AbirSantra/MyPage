@@ -24,6 +24,7 @@ const about = () => {
             I enjoy creating things that make a difference
           </p>
         </div>
+        <div className="line w-full max-w-[1440px] h-[1px] bg-light-grey/40"></div>
 
         {/* Education */}
         <div className="w-full flex flex-col justify-center items-start gap-6">
@@ -36,7 +37,7 @@ const about = () => {
               src={AdamasLogo}
               height={64}
               width={64}
-              className="rounded-full"
+              className="rounded-full border-2 border-main-dark"
             />
             <div className="text-dark-black dark:text-white-one">
               <p className="font-semibold text-lg">
@@ -54,7 +55,7 @@ const about = () => {
               src={MckvLogo}
               height={64}
               width={64}
-              className="rounded-full"
+              className="rounded-full border-2 border-main-dark"
             />
             <div className="text-dark-black dark:text-white-one">
               <p className="font-semibold text-lg">
@@ -81,7 +82,7 @@ const about = () => {
               src={CrypticLogo}
               height={64}
               width={64}
-              className="rounded-full"
+              className="rounded-full border-2 border-main-dark"
             />
             <div className="text-dark-black dark:text-white-one flex flex-col gap-1">
               <p className="font-semibold text-xl">Cryptic Records</p>
