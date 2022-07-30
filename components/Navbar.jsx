@@ -42,10 +42,10 @@ const Navbar = () => {
       <div className="navbar__container flex justify-between items-center w-full h-full max-w-[1440px] px-4 md:px-8 lg:px-16">
         {/* Logo */}
         <Link href="/">
-          <h1 className="navbar__logo font-Titillium text-[1.8rem] font-semibold leading-none dark:text-white-one">
+          <button className="navbar__logo font-Titillium text-[1.8rem] font-semibold leading-none dark:text-white-one">
             Abir<span className=" font-thin cursor-pointer ">Santra</span>
             <span className="text-main-dark font-bold">.</span>
-          </h1>
+          </button>
         </Link>
 
         <div className="navbar__right flex justify-center items-center gap-4">
