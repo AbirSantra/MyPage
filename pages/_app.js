@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
 
       // if NOT set via local storage previously
     } else {
+      document.documentElement.classList.add("dark");
       localStorage.setItem("color-theme", "dark");
     }
   }, []);
