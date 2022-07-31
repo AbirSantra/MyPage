@@ -118,6 +118,7 @@ const Navbar = () => {
             ? "md:hidden navbar__mobile--background fixed top-0 left-0 z-[100] w-full h-screen bg-light-black/80"
             : ""
         }
+        onClick={handleNav}
       >
         <div
           // mobile menu is outside the screen initially. if state of menu is true, change position to come on screen.
@@ -147,27 +148,42 @@ const Navbar = () => {
           {/* Navlinks */}
           <div className="mobilemenu__navlinks flex flex-col justify-center items-start gap-12">
             <Link href="/">
-              <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
+              <a
+                onClick={handleNav}
+                className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out"
+              >
                 Home
               </a>
             </Link>
             <Link href="/about">
-              <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
+              <a
+                onClick={handleNav}
+                className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out"
+              >
                 About
               </a>
             </Link>
             <Link href="/tech">
-              <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
+              <a
+                onClick={handleNav}
+                className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out"
+              >
                 Tech
               </a>
             </Link>
             <Link href="/project">
-              <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
+              <a
+                onClick={handleNav}
+                className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out"
+              >
                 Projects
               </a>
             </Link>
             <Link href="/blog">
-              <a className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out">
+              <a
+                onClick={handleNav}
+                className="font-medium text-xl text-light-black dark:text-grey hover:text-main-dark transition-all duration-300 ease-in-out"
+              >
                 Blog
               </a>
             </Link>
@@ -190,7 +206,10 @@ const Navbar = () => {
           </button>
           {/* CTA Button */}
           <Link href="mailto:santraabir8@gmail.com?subject=Write%20your%20main%20purpose%20of%20contacting%20me%20here&body=Write%20your%20message%20in%20detail.%0D%0ADon't%20forget%20to%20mention%20your%20contact%20detail%20so%20I%20can%20get%20back%20to%20you">
-            <a className="btn bg-main-dark text-white-two border-0 w-full max-w-xs font-medium text-xl">
+            <a
+              onClick={handleNav}
+              className="btn bg-main-dark text-white-two border-0 w-full max-w-xs font-medium text-xl"
+            >
               Say Hi!
             </a>
           </Link>
