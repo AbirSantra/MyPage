@@ -45,7 +45,7 @@ const ProjectSection = () => {
               className="group-hover:scale-110 ease-in-out duration-300"
             />
             <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
-              <Link href="project/project-1">
+              <Link href="project/coin-and-coin">
                 <button className="btn text-3xl h-20 w-20 shadow-md">
                   <BsArrowRight />
                 </button>
