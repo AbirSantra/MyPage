@@ -31,7 +31,9 @@ const Project = ({ project }) => {
         <div className="w-full flex flex-col justify-center items-start gap-8">
           {/* Header */}
           <div className="w-full flex flex-col justify-center items-start gap-4">
-            <h1 className="text-dark-black dark:text-white-one">{title}</h1>
+            <h1 className="text-dark-black dark:text-white-one font-Titillium">
+              {title}
+            </h1>
             <p className=" text-dark-black dark:text-white-one">{subtitle}</p>
             <img
               src={urlFor(coverImage).url()}
@@ -64,14 +66,14 @@ const Project = ({ project }) => {
 
           {/* Tech Stack */}
           <div className="w-full flex justify-start items-center flex-wrap gap-2">
-            <p className=" text-dark-black dark:text-white-one font-medium text-lg">
+            <p className=" text-dark-black dark:text-white-one font-semibold text-lg font-Titillium">
               Tech Used:
             </p>
             {techStack.map((tech) => {
               return (
                 <div
                   key={tech._id}
-                  className="text-main-dark border-[1px] text-sm p-1 rounded-md font-medium"
+                  className="text-main-dark border-[1px] text-sm py-1 px-2 rounded-md font-semibold"
                 >
                   {tech.title}
                 </div>
