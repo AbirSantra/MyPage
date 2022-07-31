@@ -11,9 +11,13 @@ const ProjectCard = ({ card }) => {
       <img src={urlFor(card.coverImage)} />
       <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
         <Link href={`project/${card.slug.current}`}>
-          <button className="btn text-3xl h-20 w-20 shadow-md">
+          <a
+            className="btn text-3xl h-20 w-20 shadow-md"
+            target="_blank"
+            rel="noreferrer"
+          >
             <BsArrowRight />
-          </button>
+          </a>
         </Link>
       </div>
     </div>
