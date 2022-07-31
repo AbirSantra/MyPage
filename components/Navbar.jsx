@@ -118,7 +118,6 @@ const Navbar = () => {
             ? "md:hidden navbar__mobile--background fixed top-0 left-0 z-[100] w-full h-screen bg-light-black/80"
             : ""
         }
-        onClick={handleNav}
       >
         <div
           // mobile menu is outside the screen initially. if state of menu is true, change position to come on screen.
