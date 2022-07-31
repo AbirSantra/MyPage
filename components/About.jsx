@@ -62,7 +62,7 @@ const About = () => {
               Learn More
               <BsArrowRight />
             </a>
-            <a
+            {/* <a
               href="/Abir Santra CV(Unfinished).pdf"
               target="_blank"
               rel="noreferrer"
@@ -70,7 +70,7 @@ const About = () => {
             >
               Resume
               <FiDownload />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
