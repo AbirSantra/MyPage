@@ -58,7 +58,7 @@ const About = () => {
             jam on my drums, and watch Anime.
           </p>
           <div className="flex items-center justify-center gap-4 text-sm sm:text-base">
-            <a href="/about" className="btn">
+            <a href="/about" className="btn" aria-label="Learn more about me">
               Learn More
               <BsArrowRight />
             </a>
@@ -67,6 +67,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
               className="btn-2"
+              aria-label="Download my resume"
             >
               Resume
               <FiDownload />
