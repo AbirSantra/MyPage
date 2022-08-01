@@ -27,11 +27,15 @@ const ProjectSection = () => {
           <div className="group relative project-1 md:row-span-2 md:col-span-2 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image
               src={PolaroidImg}
+              alt="Polaroid Showcase"
               className="group-hover:scale-110 ease-in-out duration-300"
             />
             <div className="absolute opacity-0 group-hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/polaroid">
-                <button className="btn text-3xl h-20 w-20 shadow-md">
+                <button
+                  className="btn text-3xl h-20 w-20 shadow-md"
+                  aria-label="Learn More"
+                >
                   <BsArrowRight />
                 </button>
               </Link>
@@ -42,11 +46,15 @@ const ProjectSection = () => {
           <div className="group relative project-2 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image
               src={CoinCoinImg}
+              alt="CoinCoin Showcase"
               className="group-hover:scale-110 ease-in-out duration-300"
             />
             <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/coin-and-coin">
-                <button className="btn text-3xl h-20 w-20 shadow-md">
+                <button
+                  className="btn text-3xl h-20 w-20 shadow-md"
+                  aria-label="Learn More"
+                >
                   <BsArrowRight />
                 </button>
               </Link>
@@ -57,11 +65,15 @@ const ProjectSection = () => {
           <div className="group relative project-3 md:col-span-1 rounded-2xl overflow-hidden flex justify-center items-center h-fit shadow-lg">
             <Image
               src={WeatherNow}
+              alt="WeatherNow Showcase"
               className="group-hover:scale-110 ease-in-out duration-300"
             />
             <div className="absolute opacity-0 hover:opacity-100 top-0 left-0 bg-light-black/60 backdrop-blur-sm h-full w-full flex justify-center items-center rounded-2xl ease-in-out duration-300">
               <Link href="project/weathernow">
-                <button className="btn text-3xl h-20 w-20 shadow-md">
+                <button
+                  className="btn text-3xl h-20 w-20 shadow-md"
+                  aria-label="Learn More"
+                >
                   <BsArrowRight />
                 </button>
               </Link>
