@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Avatar from "../public/abir dp.png";
+import Avatar from "../public/abir dp small.png";
 import Socials from "./Socials";
 import { BiChevronsDown } from "react-icons/bi";
 import Link from "next/link";
@@ -27,7 +27,7 @@ const Hero = () => {
             alt="Abir Avatar"
             width={160}
             height={160}
-            // className="relative z-10"
+            priority
           />
         </div>
         <div className="mt-8">
