@@ -12,7 +12,10 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>Abir Santra | FullStack Web Developer | Graphics Designer</title>
-        <meta name="description" content="Abir Santra's portfolio" />
+        <meta
+          name="description"
+          content="Abir Santra's portfolio website. You can find all about Abir Santra on this site."
+        />
         <link rel="icon" href="/abir dp.png" />
       </Head>
 
