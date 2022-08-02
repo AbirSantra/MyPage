@@ -16,7 +16,7 @@ export default function Home({ posts }) {
           name="description"
           content="Abir Santra's portfolio website. You can find all about Abir Santra on this site."
         />
-        <link rel="icon" href="/abir dp.png" />
+        <link rel="icon" href="/abir dp small.png" />
       </Head>
 
       <Hero />
