@@ -24,19 +24,19 @@ const About = () => {
             These are the things that I'm good at
           </p>
           <ServiceCard
+            name="Web UI Design"
+            desc="This includes the frontend; designing responsive UI, wireframes and mockups for web applications as well as mobile apps."
+            icon={<MdOutlineDesignServices />}
+          />
+          <ServiceCard
             name="Web Development"
-            desc="This includes frontend of any type of website as well as backend work such as creating and working with API, databases and authentication."
+            desc="This includes the backend; creating and working with API, databases and authentication."
             icon={<FaCode />}
           />
           <ServiceCard
             name="Graphics Design"
             desc="This includes all types of graphic design work such as logos, banners, posters, channel arts, etc"
             icon={<FiPenTool />}
-          />
-          <ServiceCard
-            name="UI Design"
-            desc="This includes designing responsive UI, wireframes and mockups for web applications as well as mobile apps."
-            icon={<MdOutlineDesignServices />}
           />
         </div>
         {/* Right Section - About */}
