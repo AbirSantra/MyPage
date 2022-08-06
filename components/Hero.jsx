@@ -13,7 +13,7 @@ const Hero = () => {
           Hi, I&apos;m Abir
         </p>
         <h1 className="font-Titillium text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-          Full Stack Developer & Graphics Designer
+          Web Developer & Graphics Designer
         </h1>
         <p className="text-md md:text-2xl mt-4 text-light-grey">
           I love building things out of code.
