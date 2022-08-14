@@ -53,7 +53,7 @@ const about = () => {
             <div className="font-normal">
               Currently
               <li className="">
-                Building Polaroid 2.0 - An online platform for creators
+                Building Accent - A platform for Artists and Photographers
               </li>
               <li className="">
                 Learning and exploring the world of DevOps and Web 3.0
